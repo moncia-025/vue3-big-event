@@ -20,7 +20,7 @@ export default defineConfig({
       resolvers: [ElementPlusResolver()],
     }),
   ],
-   base: '/vue3-big-event/' ,// 换成你的仓库名
+   base: '/' ,// 换成你的仓库名
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))

@@ -1,10 +1,10 @@
 import { useUserStore } from '@/stores/user'
 import component from 'element-plus/es/components/tree-select/src/tree-select-option.mjs'
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter,  createWebHashHistory } from 'vue-router'
 
 const router = createRouter({
   // vite中的import.meta.env.BASE_URL就是vite.config.js中的base配置项
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHashHistory(import.meta.env.BASE_URL),
   routes: [
     {path:'/login',component:()=>import('@/views/login/LoginPage.vue')},
     {path:'/',component:()=>import('@/views/layout/LayoutContainer.vue'),

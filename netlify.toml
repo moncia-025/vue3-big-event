@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[[redirects]]
+  from = "/api/*"
+  to = "http://big-event-vue-api-t.itheima.net/api/:splat"
+  status = 200
+  force = true
